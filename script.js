@@ -1,6 +1,5 @@
 const tarefas = ["Estudar HTML", "Estudar CSS", "Estudar JS"]
 
-
 function render() {
     const ul = document.querySelector("ul")
         ul.innerHTML = ""
@@ -10,4 +9,12 @@ function render() {
             ul.appendChild(li)          
         })    
 }
+
+function add() {
+    const input = document.querySelector("input")
+    tarefas.push(input.value)
+    input.value = ""  
+    render()  
+}
+
 render()
