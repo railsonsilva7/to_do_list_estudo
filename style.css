@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+div {
+  background: black;
+  color: burlywood;
+  border-radius: 50px 8px;
+  padding: 50px;
+}
+
